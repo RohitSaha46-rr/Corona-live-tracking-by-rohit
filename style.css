@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+
+}
+.head{
+    width: 100vw;
+    height: 20vh;
+    background:linear-gradient(#3f51b5,#020235);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.head h1{
+    color: whitesmoke;
+    font-family: 'Signika', sans-serif;
+}
+#virus{
+    font-size: 4rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #0a9c11;
+    animation: rotate 3s infinite linear;
+}
+@keyframes rotate{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+.content{
+    width: 100vw;
+   
+ 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.content .top h1{
+    padding-top: 10px;
+    font-family: 'Girassol', cursive;
+}
+.content .top h3{
+    font-family: 'Ubuntu Mono', monospace;
+    padding-top: 10px;
+    font-size: 1.3rem;
+}
+.flag{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.country{
+    display: flex;
+}
+.cases{
+    width: 100vw;
+    height: 60vh;
+   
+}
+.cases h1{
+    font-family: 'Signika', sans-serif;
+    font-size: 1.2rem;
+}
+.cases h2{
+    font-family: 'Girassol', cursive;
+}
+.active{
+    width: 100vw;
+    height: 15vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.activecases{
+    width: 20vw;
+    height: 13vh;
+    color: #030361;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(0 110 255 / 56%);
+    cursor: pointer;
+    transition: 1s;
+}
+.activecases:hover{
+    transform: scale(1.2);
+}
+.activecasesnew{
+    width: 20vw;
+    height: 13vh;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:linear-gradient(to right,#000428,#004e92);
+    cursor: pointer;
+    transition: 1s;
+}
+.activecasesnew:hover{
+    transform: scale(1.2);
+}
+.recoveredcases{
+    width: 20vw;
+    height: 13vh;
+    color: midnightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#84f706;
+    cursor: pointer;
+    transition: 1s;
+}
+.recoveredcases:hover{
+    transform: scale(1.2);
+}
+.recoveredcasesnew{
+    width: 20vw;
+    height: 13vh;
+    color: midnightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #7ed321;
+    cursor: pointer;
+    transition: 1s;
+}
+.recoveredcasesnew:hover{
+    transform: scale(1.2);
+}
+.deathcases{
+    width: 20vw;
+    height: 13vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#f40057;
+    cursor: pointer;
+    transition: 1s;
+}
+.deathcases:hover{
+    transform: scale(1.2);
+}
+.deathcasesnew{
+    width: 20vw;
+    height: 13vh;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(195 0 0);
+    cursor: pointer;
+    transition: .7s linear;
+}
+.deathcasesnew:hover{
+    transform: scale(1.2);
+}
+.total{
+    width: 100vw;
+    height: 13vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.totalcases{
+    width: 20vw;
+    height: 13vh;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:linear-gradient(to right,#42275a,#734b6d);
+    box-shadow: 5px 5px 4px grey,-5px -5px 4px grey;
+    cursor: pointer;
+}
+#new{
+    animation: clr 6s linear infinite;
+}
+@keyframes clr{
+    0%{color: red;}
+    50%{color: whitesmoke;}
+    100%{color: red;}
+}
+@media(min-width:300px)and (max-width:600px){
+    body{
+        height:130vh;
+    }
+    .active{
+        height: 20vh;
+    }
+    .activecases,.activecasesnew,.recoveredcases,.recoveredcasesnew,.deathcases,.deathcasesnew{
+        width: 25vw;
+        height: 15vh;
+    }
+    .active h1,h2{
+        font-size: 0.7rem;
+    }
+    .active .activecasesnew h1{
+        font-size: 0.6rem;
+    }
+    .totalcases{
+        width: 30vw;
+        height: 10vh;
+    }
+}
+@media(min-width:400px) and (max-width:600px){
+    .active h1,h2{
+        font-size: 0.8rem;
+    }
+    .active .activecasesnew h1{
+        font-size: 0.7rem;
+    }
+}
